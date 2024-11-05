@@ -1,8 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P';
-    --weight-content: 400; /* 465 dark theme */
-    --weight-title: 700; /* 785 dark theme */
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --weight-content: 400; /* 465 dark theme */
+  --weight-title: 700; /* 785 dark theme */
+  --accent-color: black;
+  --bg-color: white;
+  --text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      180deg,
+      rgb(231, 231, 231),
+      rgb(231, 231, 231) 0.01%,
+      rgb(26, 26, 26) 100%
+    );
 }

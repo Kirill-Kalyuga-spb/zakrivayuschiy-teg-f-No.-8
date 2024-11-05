@@ -1,6 +1,77 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+  --weight-content: 400;
+  --weight-title: 700;
+  --accent-color: black;
+  --bg-color: white;
+  --text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(
+      180deg,
+      rgb(231, 231, 231),
+      rgb(231, 231, 231) 0.01%,
+      rgb(26, 26, 26) 100%
+    );
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --weight-content: 400;
+    --weight-title: 700;
+    --accent-color: black;
+    --bg-color: white;
+    --text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+    --background-gradient: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(
+        180deg,
+        rgb(231, 231, 231),
+        rgb(231, 231, 231) 0.01%,
+        rgb(26, 26, 26) 100%
+      );
+  }
+}
+
+:root.theme-dark {
+  --weight-content: 465;
+  --weight-title: 785;
+  --accent-color: rgb(0, 204, 20);
+  --bg-color: black;
+  --text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  --background-gradient: repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, rgb(0, 127, 12), rgb(0, 67, 6) 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --weight-content: 465;
+    --weight-title: 785;
+    --accent-color: rgb(0, 204, 20);
+    --bg-color: black;
+    --text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    --background-gradient: repeating-linear-gradient(
+        to right,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(180deg, rgb(0, 127, 12), rgb(0, 67, 6) 100%);
+  }
+}
