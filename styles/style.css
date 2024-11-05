@@ -147,8 +147,8 @@
   border: none;
 }
 
-.like-icon {
-  /* color: var(--accent-color); */
+.like-icon path {
+  fill: var(--accent-color);
 }
 
 .card__like-button {
