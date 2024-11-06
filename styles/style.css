@@ -27,17 +27,24 @@
   padding-inline: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
 }
 
+.main {
+  max-inline-size: 700px;
+  margin-inline: auto;
+}
+
 .button {
   font-family: var(--accent-font);
   appearance: none;
   background: transparent;
   border: 2px solid var(--accent-color);
-  margin: auto;
 }
 
 .header {
   font-family: var(--accent-font);
   text-transform: uppercase;
+
+  max-inline-size: 700px;
+  margin-inline: auto;
 
   border: 2px solid var(--accent-color);
   background: var(--bg-color);
@@ -55,7 +62,7 @@
   font-weight: 400;
 }
 
-@media (width < 375px) {
+@media (width <= 375px) {
   .header__logo {
     font-size: clamp(2.5rem, -0.7727rem + 16.3636vw, 3.0625rem);
   }
@@ -153,10 +160,6 @@
   border: none;
 }
 
-.like-icon path {
-  fill: var(--accent-color);
-}
-
 .card__like-button {
   inline-size: 130px;
   block-size: 38px;
@@ -164,4 +167,66 @@
 
 .button-text {
   font-size: 14px;
+}
+
+.dialog__open-button {
+  background: var(--bg-color);
+  padding-inline: 20px;
+  padding-block: 15px;
+  margin-block: 50px 100px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-inline: auto;
+}
+
+@media (width <= 375px) {
+  .dialog__open-button {
+    flex-direction: column;
+  }
+}
+
+.dialog__window {
+  inset: 0;
+  background: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-inline-size: 353px;
+  transition: opacity 0.3s linear;
+}
+
+.dialog__window:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.dialog__window::backdrop {
+  background: rgb(0 0 0 / 0.7);
+}
+
+.dialog__window-header {
+  display: flex;
+  gap: 20px;
+}
+
+.dialog__window-title {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.dialog__window-icon-save {
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.dialog__window-button {
+  padding-block: 12.5px;
+  width: 100%;
 }
