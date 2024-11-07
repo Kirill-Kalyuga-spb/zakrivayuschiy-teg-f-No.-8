@@ -4,6 +4,7 @@
   --accent-color: black;
   --bg-color: white;
   --text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  --button-text-color: white; 
 
   --background-gradient: repeating-linear-gradient(
       to right,
@@ -26,6 +27,7 @@
     --accent-color: black;
     --bg-color: white;
     --text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    --button-text-color: white; 
 
     --background-gradient: repeating-linear-gradient(
         to right,
@@ -48,6 +50,7 @@
   --accent-color: rgb(0, 204, 20);
   --bg-color: black;
   --text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  --button-text-color: rgb(0, 204, 20); 
 
   --background-gradient: repeating-linear-gradient(
       to right,
@@ -65,6 +68,7 @@
     --accent-color: rgb(0, 204, 20);
     --bg-color: black;
     --text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    --button-text-color: rgb(0, 204, 20); 
 
     --background-gradient: repeating-linear-gradient(
         to right,

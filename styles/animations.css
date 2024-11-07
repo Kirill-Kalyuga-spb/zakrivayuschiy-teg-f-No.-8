@@ -12,3 +12,22 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes theme-active {
+    0% {
+        inset-inline-start: -20px;
+    }
+    100% {
+        inset-inline-start: -25px;
+    }
+}
+
+@keyframes like-button-bg {
+    0% {
+        translate: -100%;
+    }
+
+    100% {
+        translate: -100%;
+    }
+}

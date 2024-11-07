@@ -8,6 +8,7 @@
   --accent-color: black;
   --bg-color: white;
   --text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  --button-text-color: white; 
 
   --background-gradient: repeating-linear-gradient(
       to right,
