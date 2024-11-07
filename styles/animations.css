@@ -31,3 +31,23 @@
         translate: -100%;
     }
 }
+
+@keyframes heart-scale {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.5;
+    }
+}
+
+@keyframes sparks-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -26,4 +26,7 @@
       rgb(231, 231, 231) 0.01%,
       rgb(26, 26, 26) 100%
     );
+
+    /* animation variables */
+    --contour: black;
 }
